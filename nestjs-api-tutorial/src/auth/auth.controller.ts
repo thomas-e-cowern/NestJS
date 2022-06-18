@@ -5,11 +5,11 @@ export class AuthController {
   constructor(private authService: AuthService) {}
   @Post('signup')
   signup() {
-    return "I am sign up"
+    return 'I am sign up';
   }
 
   @Post('signin')
   signin() {
-    return "I am sign in"
+    return 'I am sign in';
   }
 }
