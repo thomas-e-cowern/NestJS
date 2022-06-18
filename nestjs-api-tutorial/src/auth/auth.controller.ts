@@ -5,11 +5,11 @@ export class AuthController {
   constructor(private authService: AuthService) {}
   @Post('signup')
   signup() {
-    return this.authService.signup
+    return this.authService.signup();
   }
 
   @Post('signin')
   signin() {
-    return this.authService.signin
+    return this.authService.signin();
   }
 }
