@@ -20,8 +20,8 @@ export class JwtStrategy extends PassportStrategy(Strategy, 'jwt') {
         id: payload.sub,
       },
     });
-
-    console.log(payload);
-    return payload;
+    delete user.hash;
+    console.log(user)
+    return user;
   }
 }

@@ -10,6 +10,6 @@ export class UserController {
     console.log({
       user: req.user,
     })
-    return 'user info';
+    return req.user;
   }
 }
